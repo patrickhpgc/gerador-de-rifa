@@ -1,0 +1,52 @@
+// google fonts
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,900;1,700&display=swap');
+
+// importation needed for bootstrap
+@import "../../../vendor/twbs/bootstrap/scss/functions";
+@import "../../../vendor/twbs/bootstrap/scss/variables";
+
+// ---------------------------- CUSTOM VARIABLES ----------------------------
+
+// my colors
+// $blue           : #28475D;
+
+$font-family: Roboto,
+sans-serif,
+Helvetica;
+
+// ----------------------------- BOOTSTRAP VARIABLES ----------------------------------
+
+// font-family default
+$font-family-base: $font-family;
+
+// checkbox
+// $form-check-input-checked-bg-color:  $green-2;
+// $form-check-input-checked-border-color:  $green-2;
+// $form-check-input-focus-box-shadow:  $green-2;
+
+// input
+// $input-focus-color:                     $secondary;
+// $input-focus-border-color: tint-color($blue, 50%);
+// $input-focus-box-shadow  : 0px 0px 5px 1px $blue;
+
+// colors-default
+$theme-colors: ("primary": $primary,
+    "secondary": $secondary,
+    "success": $success,
+    "info": $info,
+    "warning": $warning,
+    "danger": $danger,
+    "light": $light,
+    "dark": $dark,
+);
+
+$spacer: 1rem;
+$spacers: (0: 0,
+    1: $spacer * .25,
+    2: $spacer * .5,
+    3: $spacer,
+    4: $spacer * 1.5,
+    5: $spacer * 5,
+);
+
+@import "../../../node_modules/bootstrap/scss/bootstrap";
